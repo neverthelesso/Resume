@@ -5,49 +5,26 @@
   <title>resume</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+    <div id="siteWelcome" class="site-welcome active">
+        <div class="loading"></div>
+    </div>
   <div id="topNavBar" class="topNavBar">
     <div class="topNavBar-inner clearfix">
-      <a class="logo" href="#" alt="logo" style="float: left;">
-        <span class="rs">RS</span>
-        <span class="card">card</span>
+      <a class="logo" href="#">
+        <span class="rs">S</span><span class="card">KY</span>
       </a>
-      <nav class="menu" style="float: right;">
+      <nav class="menu" >
         <ul class="clearfix">
-          <li>
-            <a href="#siteAbout">关于</a>
-          </li>
-          <li>
-            <a href="#siteSkills">技能</a>
-          </li>
-          <li>
-            <a href="#siteWorks">作品</a>
-            <ul class="submenu">
-              <li>作品1</li>
-              <li>作品2</li>
-              <li>作品3</li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">博客</a>
-            <ul class="submenu">
-              <li>博客1</li>
-              <li>博客2</li>
-              <li>博客3</li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">日历</a>
-          </li>
-          <li>
-            <a href="#">联系方式</a>
-          </li>
-          <li>
-            <a href="#">其他</a>
-          </li>
+            <li class="highlight"><a class="anchor" href="#siteAbout">简介</a></li>
+            <li><a class="anchor" href="#siteWorks">作品</a></li>
+            <li><a class="anchor" href="#siteSkills">技能</a></li>
+            <li><a class="anchor" href="#siteMessages">留言</a></li>
+            <li><a class="anchor" href="#"><a href="https://github.com/neverthelesso/blog" target="_blank">博客</a></a></li>
+            <li><a class="anchor" href="#"><a href="https://github.com/neverthelesso" target="_blank">GitHub</a></a></li>
         </ul>
       </nav>
     </div>
@@ -55,138 +32,178 @@
   <div class="banner">
     <div class="mask"></div>
   </div>
-  <main>
-    <div data-x id="siteAbout" class="userCard">
-      <div class="pictureAndText clearfix">
-        <div class="picture">
-          <img src="./img/avatar.jpg" width=299 height=347 alt="头像">
-        </div>
-        <div class="text">
-          <span class="welcome">Hello
-            <span class="triangle"></span>
-          </span>
-          <h1>方应杭</h1>
-          <p>前端开发工程师</p>
-          <hr>
-          <dl>
-            <dt>年龄</dt>
-            <dd>18</dd>
-            <dt>所在城市</dt>
-            <dd>北京</dd>
-            <dt>邮箱</dt>
-            <dd>fangyinghang@foxmail.com</dd>
-            <dt>手机</dt>
-            <dd>13812345678</dd>
-          </dl>
-        </div>
+  <main data-x  id="siteAbout" class="scrollMain">
+      <div class="userCard">
+          <div class="pictureAndText clearfix">
+              <img class="picturePC" style="height: 335px;width: 251px" src="./img/head-shot.jpeg" alt="avatar">
+              <div class="text">
+                  <span class="welcome">你好，我是一名前端工程师
+                      <span class="triangle"></span>
+                  </span>
+                  <h1>尚锴元</h1>
+                  <p class="selfIntroduction">
+                      毕业于河南大学，熟悉 HTML/CSS/JS/VUE
+                  </p>
+  
+                  <hr>
+                  <dl class="clearfix">
+                      <dt class="age">年龄</dt><dd class="age">23</dd><dt class="address">地址</dt><dd class="address">郑州</dd><dt>邮箱</dt><dd>1815111899@qq.com</dd><dt>微信</dt><dd>Sky1988N</dd>
+                  </dl>
+              </div>
+          </div>
+  
+          <footer class="media">
+              <a href="https://github.com/neverthelesso/blog" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                      <use xlink:href="#icon-github"></use>
+                  </svg>
+              </a>
+              <a href="weChat.html" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                      <use xlink:href="#icon-weixin"></use>
+                  </svg>
+              </a>
+          </footer>
       </div>
-      <footer class="media">
-        <a href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-github"></use>
-          </svg>
-        </a>
-        <a href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-Ankerwebicon-"></use>
-          </svg>
-        </a>
-        <a href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-weibo"></use>
-          </svg>
-        </a>
-      </footer>
-    </div>
-
-    <p class="downloadResume-wrapper">
-      <a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 PDF 简历</a>
-    </p>
-
-    <p class="selfIntroduction">
-      方应杭， 资深前端工程师，资深前端讲师，现在在 饥人谷 教前端课程。
-      <br> 技能：前端开发，Rails 开发，Node.js 开发
-    </p>
-
+  
+      <p class="downloadResume-wrapper">
+          <a class="downloadResume" href="尚锴元-前端开发 .pdf" target="_blank" download>下 载 简 历</a>
+      </p>
   </main>
-  <section data-x id="siteSkills" class="skills">
+  <section data-x id="siteWorks" class="portfolio scrollWorks">
+      <h2 class="worksTitle">作品</h2>
+      <div class="works">
+          <ol>
+              <li class="works1">
+                  <div class="left">
+                      <a target="_blank" href="https://neverthelesso.github.io/demos/nav-demo/index.html">
+                        <img class="PC" style="width: 280px; height: 210px;" src="img/nav.jpg"  alt="图片">
+                        <img class="MB" src="img/nav.jpg"  alt="图片">
+                    </a>
+                  </div>
+                  <div class="right">
+                      <h3><a target="_blank" href="https://github.com/neverthelesso/demos/tree/master/nav-demo">键盘导航页 - <a target="_blank" href="https://github.com/neverthelesso/demos/tree/master/nav-demo">源码</a></a></h3>
+                      <p>利用原生 JavaScript 实现为键盘上的 26 个字母绑定导航网址，敲击字母即可跳转至相应导航页面，还可以自定义每个键绑定的导航网址。 </p>
+                  </div>
+              </li>
+              <li class="works2">
+                  <div class="left">
+                      <a target="_blank" href="https://neverthelesso.github.io/demos/canvas-demo/index.html">
+                          <img class="PC" style="width: 280px; height: 210px" src="img/canvas.jpg"  alt="图片">
+                          <img class="MB" src="img/canvas.jpg" alt="">
+                      </a>
+                  </div>
+                  <div class="right">
+                      <h3><a target="_blank" href="https://github.com/neverthelesso/demos/tree/master/canvas-demo">Canvas画板 - <a target="_blank" href="https://github.com/neverthelesso/demos/tree/master/canvas-demo">源码</a></a></h3>
+                      <p>该项目使用原生JS实现，主要调用 Canvas API，支持移动端使用，实现了画画、调色、橡皮擦、保存等功能。</p>
+                  </div>
+              </li>
+              <li class="works3">
+                  <div class="left">
+                      <a target="_blank" href="https://neverthelesso.github.io/Pikachu/">
+                          <img class="PC" style="width: 280px; height: 210px" src="img/pikachu.jpg"  alt="图片">
+                          <img class="MB" src="img/pikachu.jpg"  alt="图片">
+                      </a>
+                  </div>
+                  <div class="right">
+                      <h3><a target="_blank" href="https://github.com/neverthelesso/Pikachu">皮卡丘 - <a target="_blank" href="https://github.com/neverthelesso/Pikachu">源码</a></a></h3>
+                      <p>主要使用 CSS3 实现。</p>
+                  </div>
+              </li>
+              <li class="works4">
+                  <div class="left">
+                      <a target="_blank" href="https://neverthelesso.github.io/music-demo/">
+                          <img class="PC" style="width: 280px; height: 210px" src="img/wangyi.jpg"  alt="图片">
+                          <img class="MB" src="img/wangyi.jpg"  alt="图片">
+                      </a>
+                  </div>
+                  <div class="right">
+                      <h3><a target="_blank" href="https://github.com/neverthelesso/music-demo">网易云音乐 - <a target="_blank" href="https://github.com/neverthelesso/music-demo">源码</a></a></h3>
+                      <p>移动端歌曲播放、暂停、搜索等功能。使用 jQuery以及 LeanCloud等作为数据库实现。</p>
+                  </div>
+              </li>
+              <li class="works5">
+                  <div class="left">
+                      <a target="_blank" href="https://neverthelesso.github.io/demos/slides/slides-demo3/index.html">
+                          <img class="PC" style="width: 280px; height: 210px" src="img/slides.png"  alt="图片">
+                          <img class="MB" src="img/slides.png"  alt="图片">
+                      </a>
+                  </div>
+                  <div class="right">
+                      <h3><a target="_blank" href="https://github.com/neverthelesso/demos/tree/master/slides">无缝轮播 - <a target="_blank" href="https://github.com/neverthelesso/demos/tree/master/slides">源码</a></a></h3>
+                      <p>使用原生JS实现。</p>
+                  </div>
+              </li>
+              <li class="works6">
+                  <div class="left">
+                      <a target="_blank" href="https://github.com/neverthelesso/sign-up-in-demo">
+                          <img class="PC" style="width: 280px; height: 210px" src="img/sign-in-up.jpg"  alt="图片">
+                          <img class="MB" src="img/sign-in-up.jpg"  alt="图片">
+                      </a>
+                  </div>
+                  <div class="right">
+                      <h3><a target="_blank" href="https://github.com/neverthelesso/sign-up-in-demo">注册登录- <a target="_blank" href="https://github.com/neverthelesso/sign-up-in-demo">源码</a></a></h3>
+                      <p>使用原生 JS 和 Node.js 模拟用户登录与注册，实现了用户登录、注册、将注册信息保存到数据库中。</p>
+                  </div>
+              </li>
+          </ol>
+      </div>
+  </section>
+  <section data-x id="siteSkills" class="skills scrollSkill">
     <h2>技能</h2>
     <ol class="clearfix">
       <li>
         <h3>
-          HTML 5 &amp; CSS 3
+            HTML5 & CSS3 - ★★★★☆
         </h3>
-        <div class="progressBar">
-          <div class="progress" style="width: 10%;"></div>
-        </div>
-      </li>
-      <li>
+        <p>了解 HTML5 语义化结构，了解 flex 布局以及居中常用方法，掌握 CSS 3 动画、过渡效果、等常用技术</p>
+    </li>
+
+    <li>
         <h3>
-          JavaScript
+            移动端页面 - ★★★★☆
         </h3>
-        <div class="progressBar">
-          <div class="progress" style="width: 20%"></div>
-        </div>
-      </li>
-      <li>
+        <p>会使用 REM、vw/vh、FastClick 等技术，PC 端根据 &ltmeta name="viewport"> 以及媒体查询等制作适配手机设备的页面</p>
+    </li>
+    <li>
         <h3>
-          jQuery
+            jQuery - ★★★★☆
         </h3>
-        <div class="progressBar">
-          <div class="progress" style="width: 30%"></div>
-        </div>
-      </li>
-      <li>
+        <p>熟悉 jQuery 的常用API，能使用 jQuery 制作网站、轮播、Tab 组件等</p>
+    </li>
+    <li>
         <h3>
-          Vue.js
+            JavaScript - ★★★★☆
         </h3>
-        <div class="progressBar">
-          <div class="progress" style="width: 40%"></div>
-        </div>
-      </li>
-      <li>
+        <p>在不使用框架的情况下，能够使用原生 JS 常用 API 完成部分需求</p>
+    </li>
+    <li>
         <h3>
-          React.js
+            Vue - ★★★☆☆
         </h3>
-        <div class="progressBar">
-          <div class="progress"  style="width: 50%"></div>
-        </div>
-      </li>
-      <li>
+        <p>熟悉 Vue 的常用功能，如组件、Vue-Router、双向绑定等</p>
+    </li>
+    <li>
         <h3>
-          Node.js
+            前端框架 - ★★★☆☆
         </h3>
-        <div class="progressBar">
-          <div class="progress"  style="width: 60%"></div>
-        </div>
-      </li>
+        <p>理解 Mvc、MVVM 的思想，可以熟练使用相关的库，如 Vue</p>
+    </li>
+    <li>
+        <h3>
+            小程序制作 - ★★☆☆☆
+        </h3>
+        <p>正在学习中......</p>
+    </li>
+    <li>
+        <h3>
+            HTTP 缓存、Cookie、Session - ★★★☆☆
+        </h3>
+        <p>了解客户端缓存、Cookie、session 等知识，并写了相应博客</p>
+    </li>
     </ol>
   </section>
-  <section data-x class="portfolio" id="siteWorks">
-    <h2>作品集</h2>
-
-    <!-- 这就是 view , 用户看得见的东西-->
-    <!-- Slider main container -->
-    <div id="mySlides">
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <img src="./img/works/nav-page.jpg" class="swiper-slide">
-          <img src="./img/works/canvas.jpg" class="swiper-slide">
-          <img src="./img/works/apple-style-slides.jpg" class="swiper-slide">
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-      </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-
-  </section>
-  <section class="message">
+  <section data-x class="message" id="siteMessages">
     <h2>留言</h2>
     <ol id="messageList">
     </ol>
@@ -198,7 +215,8 @@
       <input type="submit" value="提交">
     </form>
   </section>
-  <script src="//at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
+
+  <script src="//at.alicdn.com/t/font_586819_1v2v7gn4dr46xbt9.js  "></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
   <script src="//cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
