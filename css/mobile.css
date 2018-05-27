@@ -1,0 +1,179 @@
+img{
+    width: 100%;
+}
+
+.topNavBar-inner {
+    padding: 0 6px;
+}
+
+.userCard {
+    width: 95%;
+}
+.userCard .welcome{
+    margin-top: 20px;
+}
+.userCard .picturePC{
+    display: none;
+}
+.userCard .pictureMB{
+    width: auto;
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.userCard .text {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.userCard .text h1 {
+    margin-top: 18px;
+    margin-bottom: 5px; }
+.userCard > footer.media {
+    display: none; }
+.userCard > .pictureAndText{
+    margin-bottom: 65px;
+}
+
+.userCard .text .welcome{
+    display: none;
+}
+
+section.portfolio {
+    margin: 25px auto 35px;
+}
+
+
+.works > ol{
+    display: block;
+    text-align: center;
+}
+.works > ol > li{
+    display: block;
+    width: 95%;
+    margin: 0 auto 52px;
+}
+.works > ol > li > .right{
+    display: flex;
+    justify-content: center;
+    padding: 14px 0 14px 0;
+}
+.works > ol > li > .right > p{
+    display: none;
+}
+.works > ol > li > .right > h3 {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.works > ol > li > .left > a > .MB{
+    display: block;
+}
+.works > ol > li > .left > a > img:hover{
+    box-shadow: 0 0 0 0 #fff;
+}
+.works > ol > li > .left > a > .PC{
+    display: none;
+}
+.works > ol > .works1{
+    display: none;
+}
+
+section.skills {
+    width: 95%;
+    margin: 30px auto 62px;
+}
+
+section.skills ol > li > h3{
+    font-size: 16px;
+    line-height: .8;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+section.skills > ol > li > p {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0;
+    }
+
+section.skills > ol {
+    box-shadow: 0 1px 6px 4px rgba(102, 102, 102, 0.1);
+    background-color: white;
+    padding: 5px;
+    padding-top: 20px;
+    margin-top: 30px; }
+
+section.skills > ol > li {
+    width: 100%;
+     }
+
+section.education > div{
+    width: 95%;
+    margin: 20px auto 40px;
+    padding: 10px;
+    font-family: Kai, serif;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+section.education > div > p{
+    padding-left: 7px;
+}
+
+section.message {
+    width: 95%;
+    margin: 20px auto 20px;
+}
+
+
+.userCard dl dt,
+.userCard dl dd {
+    float: none;
+     }
+.userCard .age,
+.userCard .address{
+    display: none;
+}
+
+body > main .downloadResume{
+    display: none}
+
+section.message > form {
+    width: 90%;
+    margin: 41px auto 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section.message > form > .form-group{
+    padding-top: 10px;
+}
+section.message > form > button{
+    height: 34px;
+    align-self: flex-end;
+}
+section.message > form > label{
+    font-size: 18px;
+    margin-right: 0;
+}
+section.message > form > label >input[type=text]{
+    border: 0;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    font-weight: lighter;
+    box-shadow: -3px 4px 4px -4px rgba(51,51,51,0.35);
+    font-size: 16px;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+section.message > form:nth-child(1){
+    margin-bottom: 15px;
+}
+section.message > form > .form-group{
+    margin-bottom: 0;
+}
+section.message > form > .form-group > input{
+    border: 0;
+}

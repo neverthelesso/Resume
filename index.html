@@ -3,8 +3,11 @@
 
 <head>
   <title>resume</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" media="(max-width:768px)" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/loading.css">
 </head>
 
 <body>
@@ -46,7 +49,10 @@
   
                   <hr>
                   <dl class="clearfix">
-                      <dt class="age">年龄</dt><dd class="age">23</dd><dt class="address">地址</dt><dd class="address">郑州</dd><dt>邮箱</dt><dd>1815111899@qq.com</dd><dt>微信</dt><dd>Sky1988N</dd>
+                      <dt class="age">年龄</dt><dd class="age">23</dd>
+                      <dt class="address">地址</dt><dd class="address">郑州</dd>
+                      <dt>邮箱</dt><dd>1815111899@qq.com</dd>
+                      <dt>微信</dt><dd>Sky1988N</dd>
                   </dl>
               </div>
           </div>
@@ -219,14 +225,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
   <script src="//cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
+  
+  <!-- 模块化 -->
   <script src="./js/base/View.js"></script>
   <script src="./js/base/Model.js"></script>
   <script src="./js/base/Controller.js"></script>
-  <!-- 模块化 -->
   <script src="./js/auto-slide-up.js"></script>
   <script src="./js/sticky-topbar.js"></script>
   <script src="./js/smoothly-navigation.js"></script>
   <script src="./js/message.js"></script>
+  <script src="./js/removeLoading.js"></script>
 </body>
 
 </html>
